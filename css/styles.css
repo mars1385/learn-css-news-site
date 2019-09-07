@@ -60,6 +60,66 @@ h6 {
 	overflow: hidden;
 }
 
+.category {
+	padding: 0.4rem 0.6rem;
+	border-radius: 50px;
+	margin-bottom: 0.5rem;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 0.55rem;
+	color: #fff;
+}
+
+.card {
+	background: #fff;
+	padding: 1rem;
+}
+
+.category-sports {
+	background: var(--sports-color);
+}
+
+.category-ent {
+	background: var(--ent-color);
+}
+
+.category-tech {
+	background: var(--tech-color);
+}
+
+.btn {
+	cursor: pointer;
+	color: #fff;
+	padding: 0.5rem 1.4rem;
+	display: inline-block;
+	border: none;
+	background: var(--dark-color);
+	border-radius: 10px;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.byn-block {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.btn-primary {
+	background: var(--primary-color);
+}
+
+.btn-light {
+	background: var(--light-color);
+}
+
+.btn-secondary {
+	background: var(--secondary-color);
+}
+
 /* navbar */
 #main-nav {
 	position: sticky;
@@ -89,7 +149,7 @@ h6 {
 	font-weight: bold;
 	margin: 0 0.25rem;
 	border-radius: 8px;
-	transition: all 0.3s ease;
+	transition: all 0.4s ease;
 }
 
 #main-nav ul li a.current {
@@ -136,4 +196,19 @@ h6 {
 	justify-content: center;
 	align-items: center;
 	height: 50vh;
+}
+
+#showcase .showcase-content {
+	z-index: 1;
+}
+
+#showcase .showcase-content p {
+	margin-bottom: 1rem;
+}
+
+/* home articles section */
+#home-articles .articles-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
 }
